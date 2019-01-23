@@ -6,11 +6,11 @@ import FoodTrucks from './FoodTruck/FoodTrucks';
 import LiveMusic from "./LiveMusic/LiveMusic";
 import BreweryApply from "./FormComponents/BreweryApply";
 import RecommendBeer from "./FormComponents/RecommendBeer";
-import BandApply from "./FormComponents/BandApply";
 import VendorApply from "./FormComponents/VendorApply";
 import FoodTruckApply from "./FormComponents/FoodTruckApply";
 import UserProfile from './UserProfile/UserProfile';
 import React from 'react';
+import FormikBandApply from './FormComponents/FormikBandApply';
 
 
 function Router(props){
@@ -28,7 +28,7 @@ function Router(props){
                 <Route path="/vendor-apply" component={VendorApply}></Route>
                 <Route path="/live-music" component={LiveMusic}></Route>    
                 {/* Form */}
-                <Route path="/band-apply" component={BandApply}></Route>       
+                <Route path="/band-apply" component={FormikBandApply}></Route>       
                 <Route path="/food-trucks" component={FoodTrucks}></Route>
                 {/* Form */}
                 <Route path="/foodtruck-apply" component={FoodTruckApply}></Route>
