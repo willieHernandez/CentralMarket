@@ -10,7 +10,7 @@ import VendorApply from "./FormComponents/VendorApply";
 import FoodTruckApply from "./FormComponents/FoodTruckApply";
 import UserProfile from './UserProfile/UserProfile';
 import React from 'react';
-import FormikBandApply from './FormComponents/FormikBandApply';
+import FormikBandApply from './FormComponents/BandApply';
 
 
 function Router(props){

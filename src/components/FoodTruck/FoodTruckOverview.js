@@ -47,18 +47,13 @@ class FoodTruckOverview extends React.Component {
         let index = 0;
         let counter =1;
         let liveMusicArray = Object.values(this.props.foodTruckList);
-        let displayFirst = true;
 
 
         while (counter <= numContainers){
 
             // use this to set the displayContainer prop
             
-            if (counter === 1) {
-                displayFirst = true;
-            } else {
-                displayFirst = false;
-            } 
+
             if (hasUnevenRows){
                 // will be an even row 
                 if (counter < numContainers){
@@ -78,10 +73,9 @@ class FoodTruckOverview extends React.Component {
             } 
             // won't have any uneven rows
             else {
-                liveMusicArray.slice(index, index+numEventsToShow).map(() => {
-                    // Render event
-                    console.log("Rendering element number " + liveMusicArray[index])
-                })
+                this.containerArray.push(liveMusicArray.slice(index))
+                index += numEventsToShow
+                
             }
             counter++;
         }
