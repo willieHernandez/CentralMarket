@@ -247,6 +247,7 @@ a:active {
 }
 
 .footer{
+
 	padding-top:10px;
 	background-color:#1d2120;
 	color:#bcd5d1;
@@ -373,4 +374,38 @@ a:active {
 }
 
 
+.date-picker-input{
+	display:inline;
+	border:solid 2px yellow;
+}
 
+
+.form-wrapper{
+	display:inline;
+}
+
+.form-style{
+	display:flex;
+	flex-direction: column;
+	width:50%;
+	margin:auto;
+	background-color:#1d2120;
+	color:#bcd5d1;
+	border-style:outset;
+	border-radius:5px;
+	border-color:#ba9077;
+}
+
+.form-style h1{
+	align-self:center;
+}
+
+.form-input-field{
+	width:min-content;
+	padding:10px;
+}
+
+.form-button{
+	width:50%;
+	margin:auto;
+}

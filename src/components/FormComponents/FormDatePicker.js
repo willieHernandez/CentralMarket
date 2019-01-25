@@ -1,20 +1,15 @@
 import React, {Component} from 'react';
-import {Field, ErrorMessage} from 'formik';
 import DatePicker from 'react-datepicker';
+import "react-datepicker/dist/react-datepicker.css";
 
 
 class FormDatePicker extends Component{
-    constructor(...props){
-        super(...props)
-        // this.form = {touched, errors};
-        // this.field = field;
-        
-    }
+
 
 
     render(){
         return(
-            <div>
+            <div className="date-picker-input">
                 {/* {console.log("The props are:\n")}
                 {console.log(this.props)} */}
                 <DatePicker selected={this.props.startDate} {...this.props}/>
