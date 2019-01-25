@@ -181,13 +181,15 @@ class Home extends Component{
 
     render(){
         return(
-            <div>
+            <div className="container">
                 <Header />
-                {/* Get a new image so that way it is wider and shorter. */}
-                <PictureWithDescription containerClass="picture-with-description" pictureClass="picture-with-description-img" source="/images/centralMarket.jpg" altText="Main picture of Central Market" captionClass="picture-with-description-caption" caption="Welcome to Central Market, a place where families in Northwest Indiana can come to hang out with friends, support local artists and restaurants."/>
-                <TabContainer />
-                <EventOverview eventList={this.state.eventList} numEventsToShow={2} allowNavigate={false}/>
-                <Footer />
+                <div className="body-portion">
+                    {/* Get a new image so that way it is wider and shorter. */}
+                    <PictureWithDescription containerClass="picture-with-description" pictureClass="picture-with-description-img" source="/images/centralMarket.jpg" altText="Main picture of Central Market" captionClass="picture-with-description-caption" caption="Welcome to Central Market, a place where families in Northwest Indiana can come to hang out with friends, support local artists and restaurants."/>
+                    <TabContainer />
+                    <EventOverview eventList={this.state.eventList} numEventsToShow={2} allowNavigate={false}/>
+                    <Footer />
+                </div>
             </div>
         )
     }

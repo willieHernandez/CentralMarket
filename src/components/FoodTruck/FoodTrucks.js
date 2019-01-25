@@ -45,15 +45,17 @@ class FoodTruck extends Component{
 
     render(){
         return(
-            <div>
+            <div className="container">
                 <Header />
-                <PictureWithDescription 
-                    containerClass="picture-with-description" pictureClass="picture-with-description-img" source="/images/foodTrucks.jpg" 
-                    altText="Food Trucks setup at Central Market" captionClass="picture-with-description-caption" 
-                    caption="At Central Market we welcome food trucks from all over Northwest Indiana to come and share their delicious food with some hungry people. We have 20 slots available for Food Trucks to fill. Our Food Trucks sell a multitude of things ranging from elephant ears, burgers, pizza, etc..."
-                />
-                <FoodTruckOverview foodTruckList={this.state.foodTruckList} numVendorsToShow={4} allowNavigate={true}/>
-                <OptionContainer optionsArray={this.state.options}/>
+                <div className="body-portion">
+                    <PictureWithDescription 
+                        containerClass="picture-with-description" pictureClass="picture-with-description-img" source="/images/foodTrucks.jpg" 
+                        altText="Food Trucks setup at Central Market" captionClass="picture-with-description-caption" 
+                        caption="At Central Market we welcome food trucks from all over Northwest Indiana to come and share their delicious food with some hungry people. We have 20 slots available for Food Trucks to fill. Our Food Trucks sell a multitude of things ranging from elephant ears, burgers, pizza, etc..."
+                    />
+                    <FoodTruckOverview foodTruckList={this.state.foodTruckList} numVendorsToShow={4} allowNavigate={true}/>
+                    <OptionContainer optionsArray={this.state.options}/>
+                </div>
                 <Footer />
             </div>
         )

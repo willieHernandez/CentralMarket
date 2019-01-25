@@ -24,14 +24,16 @@ class BeerGarden extends Component{
     }
     render(){
         return(
-            <div>
+            <div className="container">
                 <Header />
-                <PictureWithDescription 
-                    containerClass="picture-with-description" pictureClass="picture-with-description-img" source="/images/beerGarden.jpg" altText="Beer Garden at Central Market" captionClass="picture-with-description-caption" caption="The Beer Garden at Central Market has national beers on tap like Budweiser and Heineken. We also support local breweries like WildRose and 3 Floyd's. The Beer Garden uses a ticket system that you get outside the Beer Garden. Each ticket is worth 1 dollar and you can buy up to five tickets at a time."
-                />
-                <h2 className='list-of-beers-title'>Beers currently offered</h2>
-                <ListOfBeers />
-                <OptionContainer optionsArray={this.options}/>
+                <div className="body-portion">
+                    <PictureWithDescription 
+                        containerClass="picture-with-description" pictureClass="picture-with-description-img" source="/images/beerGarden.jpg" altText="Beer Garden at Central Market" captionClass="picture-with-description-caption" caption="The Beer Garden at Central Market has national beers on tap like Budweiser and Heineken. We also support local breweries like WildRose and 3 Floyd's. The Beer Garden uses a ticket system that you get outside the Beer Garden. Each ticket is worth 1 dollar and you can buy up to five tickets at a time."
+                    />
+                    <h2 className='list-of-beers-title'>Beers currently offered</h2>
+                    <ListOfBeers />
+                    <OptionContainer optionsArray={this.options}/>
+                </div>
                 <Footer />
             </div>
         )

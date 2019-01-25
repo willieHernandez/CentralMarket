@@ -4,20 +4,22 @@ import Footer from './Footer';
 import {Formik, Field, Form, ErrorMessage} from 'formik';
 import * as Yup from 'yup';
 import {Redirect} from 'react-router-dom';
+import {fakeAuth} from './Router';
 
 
 class Login extends Component{
     constructor(props){
         super(props)
         this.state = {
-            isAuthenticated:false,
+            isAuthenticated: this.props.isAuthenticated || false,
             userName:"",
         }
     }
 
     
     render(){
-        if(this.state.isAuthenticated){
+        if (fakeAuth.isAuthenticated){
+        // if(this.state.isAuthenticated){
             let userPath= "/user-profile/" + this.state.userName
             console.log(userPath)
             return <Redirect to={userPath} />
@@ -28,6 +30,10 @@ class Login extends Component{
                 
                 <Formik 
                     onSubmit={(values, {setSubmitting})=>{
+                        fakeAuth.authenticate(values)
+                        // fakeAuth.isAuthenticated ? (
+
+                        // )
                         console.log("Inside handle authentication")
                         this.setState({
                             isAuthenticated: true,

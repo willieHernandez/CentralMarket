@@ -41,7 +41,7 @@ class VendorApply extends Component{
                         vendorStoreName:"",
                         itemsStoreSells:"",
                         tentativeDateYouWillBeReady:"",
-                        accountType:"Vendor",
+                        accountType:"vendor",
                     }}
 
                     validationSchema = {Yup.object().shape({

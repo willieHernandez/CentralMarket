@@ -246,8 +246,20 @@ a:active {
 	height:auto;
 }
 
-.footer{
+.container {
+	min-height:100%;
+	position:relative;
+}
 
+.body-portion{
+	padding-bottom:90px;
+}
+
+.footer{
+	position:absolute;
+	height:70px;
+	width:100%;
+	bottom:0px;
 	padding-top:10px;
 	background-color:#1d2120;
 	color:#bcd5d1;
@@ -382,18 +394,24 @@ a:active {
 
 .form-wrapper{
 	display:inline;
+	position:relative;
+	min-height:100%;
 }
+
 
 .form-style{
 	display:flex;
 	flex-direction: column;
-	width:50%;
+	/* width:50%; */
+	width:fit-content;
 	margin:auto;
 	background-color:#1d2120;
 	color:#bcd5d1;
 	border-style:outset;
 	border-radius:5px;
 	border-color:#ba9077;
+	font-size:20px;
+	/* padding-bottom:90px; */
 }
 
 .form-style h1{
@@ -401,7 +419,7 @@ a:active {
 }
 
 .form-input-field{
-	width:min-content;
+	width:fit-content;
 	padding:10px;
 }
 

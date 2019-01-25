@@ -45,15 +45,17 @@ class Vendors extends Component{
 
     render(){
         return(
-            <div>
+            <div className="container">
                 <Header />
-                <PictureWithDescription 
-                    containerClass="picture-with-description" pictureClass="picture-with-description-img" source="/images/vendorsBig.jpg" 
-                    altText="Vendors setup at Central Market" captionClass="picture-with-description-caption" 
-                    caption="At Central Market we welcome people from all over Northwest Indiana to come and share the things they created. We have 20 slots available for vendors to fill. Our vendors sell a multitude of things ranging from food work, clothes, pictures, etc..."
-                />
-                <VendorOverview vendorList={this.state.vendorList} numVendorsToShow={4} allowNavigate={true}/>
-                <OptionContainer optionsArray={this.state.options}/>
+                <div className="body-portion">
+                    <PictureWithDescription 
+                        containerClass="picture-with-description" pictureClass="picture-with-description-img" source="/images/vendorsBig.jpg" 
+                        altText="Vendors setup at Central Market" captionClass="picture-with-description-caption" 
+                        caption="At Central Market we welcome people from all over Northwest Indiana to come and share the things they created. We have 20 slots available for vendors to fill. Our vendors sell a multitude of things ranging from food work, clothes, pictures, etc..."
+                    />
+                    <VendorOverview vendorList={this.state.vendorList} numVendorsToShow={4} allowNavigate={true}/>
+                    <OptionContainer optionsArray={this.state.options}/>
+                </div>
                 <Footer />
             </div>
         )
