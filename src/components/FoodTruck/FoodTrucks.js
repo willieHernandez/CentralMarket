@@ -13,23 +13,23 @@ class FoodTruck extends Component{
         this.state = {
             foodTruckList:{
                 truck1:{
-                    foodTruckName:"Sloppy Pizza",
+                    foodTruckName:"Pizza",
                     foodTruckPic:"/images/foodTruckPictures/pizza.jpg",
                 },
                 truck2:{
-                    foodTruckName:"Dumbo's Ears",
+                    foodTruckName:"Elephant Ears",
                     foodTruckPic:"/images/foodTruckPictures/elephantEar.jpg",
                 },
                 truck3:{
-                    foodTruckName:"Crabby Patties",
+                    foodTruckName:"Bob's Burgers",
                     foodTruckPic:"/images/foodTruckPictures/krabbyPatty.jpg",
                 },
                 truck4:{
-                    foodTruckName:"Ohh Me So Hungy",
+                    foodTruckName:"China Koon",
                     foodTruckPic:"/images/foodTruckPictures/asianFood.jpg",
                 },
                 truck5:{
-                    foodTruckName:"Get Some Before I am Sent Back",
+                    foodTruckName:"El Taco Real",
                     foodTruckPic:"/images/foodTruckPictures/burrito.jpg",
                 },
             },

@@ -8,6 +8,19 @@ class UserProfile extends Component{
     constructor(props){
         super(props)
 
+/*  todo: need to a database call when this will load to get the user information.
+        this includes:
+            
+            the first name
+            the last name
+            the account type
+            events the user is signed up for
+
+            needs to be conditional depending on what type of account it is.
+            
+
+
+*/
         this.state = {
             eventDates:{
                 event1:{
@@ -57,7 +70,7 @@ class UserProfile extends Component{
                 },
             },
             eventsSignedUpFor:{
-                
+
             }
         }
     }

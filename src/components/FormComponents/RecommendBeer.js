@@ -81,6 +81,7 @@ class RecommendBeer extends Component{
                                     <Field name="beerName" placeholder="Beer Name"/>
                                     <ErrorMessage name="beerName"/>
                                 </label>
+                                <button type="submit" className="form-button">Submit</button>
                             </Form>
                         </div>
                     )}

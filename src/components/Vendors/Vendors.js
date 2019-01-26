@@ -17,15 +17,15 @@ class Vendors extends Component{
                     vendorPic:"/images/vendorPictures/DIY-Decorated-Magazine-Holders.jpg",
                 },
                 vendor2:{
-                    vendorName:"My shit",
+                    vendorName:"My creations",
                     vendorPic:"/images/vendorPictures/Geometric-Heart-DIY-Wall-Art.jpg",
                 },
                 vendor3:{
-                    vendorName:"Why am I here",
+                    vendorName:"Coasters for you",
                     vendorPic:"/images/vendorPictures/Marbled-Coasters.jpg",
                 },
                 vendor4:{
-                    vendorName:"Iron Man's the Best",
+                    vendorName:"Tony's invention",
                     vendorPic:"/images/vendorPictures/Stenciled-Burlap-Candle-Holders.jpg",
                 },
                 vendor5:{
