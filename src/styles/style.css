@@ -1,3 +1,19 @@
+/*
+	New colors for the color scheme:
+		black is the local background for each local element.
+		gold is the text color for local elements. 
+		gray is the border for outside and inside local elements
+		white is well I don't remember but we will see. 
+
+		black is: #000000
+		gold is:  #FDD935
+
+		border gray is: #646c79
+
+		white is: #F6F6F8
+*/
+
+
 body{
 	background-color:#646c79;
 	font-family:Verdana, Geneva, Tahoma, sans-serif;
