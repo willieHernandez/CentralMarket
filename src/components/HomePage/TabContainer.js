@@ -62,7 +62,9 @@ class TabContainer extends Component{
 
         return(
             <div id="tab-section">
-               <h2 className="tab-section-title">Things to do at Central Market</h2>
+                <div className="tab-section-title">
+                    <h2>Things to do at Central Market</h2>
+                </div>
                 <TabItemsMenu itemsToShow={this.itemsToShow} onClick={this.selectedAnItem} />
                 {picture}
                 
