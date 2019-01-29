@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, Fragment} from 'react';
 import Header from '../Header';
 import Footer from '../Footer';
 import PictureWithDescription from '../PictureWithDescription';
@@ -195,6 +195,7 @@ class LiveMusic extends Component{
     render(){
            
         return(
+            // <Fragment>
             <div className="container">
                 <Header />
                 <div className="body-portion">
@@ -208,6 +209,7 @@ class LiveMusic extends Component{
                 </div>
                 <Footer />
             </div>
+            //{/* </Fragment> */}
         )
     }
 }

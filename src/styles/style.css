@@ -1,5 +1,6 @@
-body{
+html, body{
 	background-color:#5a5c51;
+	height:100%;
 }
 .header{
 	display:grid;
@@ -247,8 +248,15 @@ a:active {
 }
 
 .container {
+	width:100%;
+	position:absolute;
 	min-height:100%;
+}
+
+.form-wrapper{
+	display:inline;
 	position:relative;
+	min-height:100%;
 }
 
 .body-portion{
@@ -259,7 +267,7 @@ a:active {
 	position:absolute;
 	height:70px;
 	width:100%;
-	bottom:0px;
+	bottom:0;
 	padding-top:10px;
 	background-color:#1d2120;
 	color:#bcd5d1;
