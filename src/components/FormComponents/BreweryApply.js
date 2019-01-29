@@ -40,6 +40,7 @@ class BreweryApply extends Component{
                             username:"",
                             password:"",
                             breweryName:"",
+                            beerName: "",
                             numBeersToOffer:"",
                             tentativeDateYouWillBeReady:"",
                             accountType:"Brewery",
@@ -57,6 +58,7 @@ class BreweryApply extends Component{
                                 .required(),
                             breweryName: Yup.string()
                                 .required(),
+                            beerName: Yup.string().required(),
                             numBeersToOffer: Yup.number()
                                 .required(),
                             tentativeDateYouWillBeReady: Yup.date()
@@ -102,6 +104,12 @@ class BreweryApply extends Component{
                                         Brewery Name:
                                         <Field name="breweryName" placeholder="Brewery Name"/>
                                         <ErrorMessage name="breweryName"/>
+                                    </label>
+
+                                    <label className="form-input-field">
+                                        Beer Name: 
+                                        <Field name="beerName" placeHolder="Beer Name"/>
+                                        <ErrorMessage name="beerName"/>
                                     </label>
 
                                     

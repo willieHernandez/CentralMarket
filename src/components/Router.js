@@ -12,6 +12,7 @@ import UserProfile from './UserProfile/UserProfile';
 import React from 'react';
 import FormikBandApply from './FormComponents/BandApply';
 import Login from './Login';
+import EventCoordinator from './EventCoordinator';
 
 
 
@@ -61,6 +62,9 @@ function Router(props){
 
                 {/* Login */}
                 <Route path="/login" component={Login}></Route>
+
+                {/* Event Coordinator Page  */}
+                <Route path="/event-coordinator/:userName" component={EventCoordinator}></Route>
             </Switch>   
         </BrowserRouter>
     )

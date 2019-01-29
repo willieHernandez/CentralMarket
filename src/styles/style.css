@@ -14,21 +14,28 @@
 */
 
 
-body{
+html, body{
 	background-color:#646c79;
 	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	margin:0;
+	padding:0;
+	height:100%;
 }
 
 .container {
+	
 	min-height:100%;
 	position:relative;
 }
 
 .body-portion{
+	
 	padding-bottom:90px;
 	width:95%;
 	margin:auto;
 }
+
+
 
 .header{
 	display:grid;
@@ -301,7 +308,7 @@ a:active {
 	position:absolute;
 	height:70px;
 	width:100%;
-	bottom:0px;
+	bottom:0;
 	padding-top:10px;
 	background-color:#1d2120;
 	color:#bcd5d1;
