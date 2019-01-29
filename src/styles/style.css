@@ -1,12 +1,47 @@
+/*
+	New colors for the color scheme:
+		black is the local background for each local element.
+		gold is the text color for local elements. 
+		gray is the border for outside and inside local elements
+		white is well I don't remember but we will see. 
+
+		black is: #000000
+		gold is:  #FDD935
+
+		border gray is: #646c79
+
+		white is: #F6F6F8
+*/
+
+
 html, body{
-	background-color:#5a5c51;
+	background-color:#646c79;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	margin:0;
+	padding:0;
 	height:100%;
 }
+
+.container {
+	
+	min-height:100%;
+	position:relative;
+}
+
+.body-portion{
+	
+	padding-bottom:90px;
+	width:95%;
+	margin:auto;
+}
+
+
+
 .header{
 	display:grid;
 	grid-template-columns: .25fr 1fr;
-	background-color:#1d2120;
-	color:#bcd5d1;
+	background-color:#000000;
+	color:#FDD935;
 }
 
 #header-right-area{
@@ -25,14 +60,14 @@ html, body{
 }
 
 .title-top{
-	font-family: monospace;
+	/* font-family: monospace; */
 	font-size:30px;
 	text-align:center;
 	margin-bottom:0px;
 }
 
 .title-bottom{
-	font-family: monospace;
+	/* font-family: monospace; */
 	font-size:15px;
 	font-weight:100;
 	text-align:center;
@@ -41,7 +76,7 @@ html, body{
 
 #nav-bar{
 	grid-area:nav-bar;
-	color:#bcd5d1;
+	/* color:#FDD935; */
 	/* border: solid 2px blue; */
 }
 
@@ -56,10 +91,10 @@ html, body{
 
 .nav-bar-item{
 	padding: 10px 8px 0px 8px;
-	font-family:monospace;
+	/* font-family:monospace; */
 	font-size:25px;
 	font-weight:700;
-	color:#bcd5d1;
+	/* color:#FDD935; */
 	
 }
 
@@ -69,12 +104,12 @@ html, body{
 
 a:link{
 	text-decoration: none;
-	color:#bcd5d1;
+	color:#FDD935;
 	cursor:pointer;
 }
 
 a:visited {
-	color:#bcd5d1;
+	color:#FDD935;
 }  
 a:hover {
 	color:#bcd5d18c;
@@ -98,38 +133,59 @@ a:active {
 .picture-with-description{
     /* display:inline-block; */
 	/* border: solid 2px red; */
+	margin-top:15px;
     align-items:center;    
 }
 
 .picture-with-description-img{
     width:100%;
-    height:400px;
+	height:400px;
+	border:solid 2px #F6F6F8;
+}
+
+.caption-area{
+	width:100%;
+	background-color:#000000;
+	margin-top:-5px;
+	border:solid 2px #F6F6F8;
+	/* margin-top: -20px; */
 }
 
 .picture-with-description-caption{
-    font-family:monospace;
+	width:80%;
+	color:#FDD935;
+
+	/* font-family:monospace; */
     font-weight: 800;
-    font-size:16px;
-    text-align:center;
-    margin:auto auto 10px auto;
-	width:90%;
-	color:#ba9077;
+    font-size:20px;
+	text-align:center;
+	margin-top:-4px;
+	margin-left:auto;
+	margin-right:auto;
+	
+	padding-top:15px;
+	padding-bottom:5px;
+	/* background-color:#000000; */
+	
 }
 
 #tab-section{
-    /* border:solid 2px red; */
+	margin-top:15px;
+    border:solid 2px #F6F6F8;
     display:grid;
     grid-template-columns: .25fr 1fr;
 	grid-template-areas:
 		"title title"
 		"menu-item item-display";
+	background-color:#000000;
 
 }
 
 .tab-section-title{
 	grid-area:title;
-	justify-self:center;
-	color:#ba9077;
+	/* justify-self:center; */
+	color:#FDD935;
+	text-align:center;
 }
 .tab-items-menu{
     grid-area:menu-item;
@@ -138,11 +194,12 @@ a:active {
 	flex-direction:column;
 }
 .tab-item{
-    background-color:#5a5c51;
+    background-color:#000000;
     text-align:center;
 	cursor:pointer;
 	flex-grow:1;
-	color:#ba9077;
+	color:#FDD935;
+	border:2px solid #F6F6F8;
 }
 
 .tab-item:hover{
@@ -159,7 +216,7 @@ a:active {
 }
 
 .tab-item-img-caption{
-	font-family:monospace;
+	/* font-family:monospace; */
 	padding:4px;
 	font-size:16px;
 	font-weight:800;

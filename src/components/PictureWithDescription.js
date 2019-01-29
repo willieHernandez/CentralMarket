@@ -13,7 +13,9 @@ function PictureWithDescription(props){
 	return(
 	<div className={props.containerClass}>
 		<img className={props.pictureClass} src={props.source} alt={props.altText}></img>	
-		<p className={props.captionClass}>{props.caption}</p>
+		<div className={"caption-area"}>
+			<p className={props.captionClass}>{props.caption}</p>
+		</div>
 	</div>
 	)
 }
