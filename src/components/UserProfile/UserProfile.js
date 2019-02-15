@@ -71,15 +71,33 @@ class UserProfile extends Component{
             },
             eventsSignedUpFor:{
 
+            },
+            user1:{
+                userPic: "/images/BobTheBuilder.jpg",
+                firstName:"Bob",
+                lastName:"User",
+                userName:"BobUser",
+                emailAddress:"bob@user.com",
+                phoneNumber:"123-456-7891",
+                accountType:"vendor",
+                dateAvailable:"12-may-2019",
+                eventsSignedUpFor: ["19-may-2019", "26-may-2019", "4-june-2019"]
             }
         }
+        
     }
+
+
+
     render(){
         return(
-            <div className="user-profile">
+            <div className="container">
                 <Header />
-                <UserOverview userName={"Bob the Builder"} userPic={"/images/BobTheBuilder.jpg"} accountType={"band"} isAuthenticated={true}/>
-                <h1>Inside the user profile app.</h1>
+                <div className="body-portion">
+                    <UserOverview userToDisplay={this.state.user1} accountType={this.state.user1["accountType"]} isAuthenticated={true}/>
+                    <h1>Inside the user profile app.</h1>
+                    
+                </div>
                 <Footer />
             </div>
         )

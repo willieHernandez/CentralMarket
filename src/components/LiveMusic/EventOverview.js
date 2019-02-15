@@ -1,5 +1,5 @@
 import React from 'react';
-import EventContainer from './EventsContainer';
+
 import EventsContainer from './EventsContainer';
 
 
@@ -48,18 +48,14 @@ class EventOverview extends React.Component {
         let index = 0;
         let counter =1;
         let liveMusicArray = Object.values(this.props.eventList);
-        let displayFirst = true;
+        
 
 
         while (counter <= numContainers){
 
             // use this to set the displayContainer prop
             
-            if (counter === 1) {
-                displayFirst = true;
-            } else {
-                displayFirst = false;
-            } 
+
             if (hasUnevenRows){
                 // will be an even row 
                 if (counter < numContainers){

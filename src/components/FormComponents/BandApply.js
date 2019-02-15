@@ -1,4 +1,4 @@
-import React, {Component, Fragment} from 'react';
+import React, {Component} from 'react';
 import Header from '../Header';
 import Footer from '../Footer';
 import FormDatePicker from './FormDatePicker';
@@ -19,13 +19,19 @@ class BandApply extends Component{
             startDate: new Date(),
             formIsSubmitted: false,
         }
-        this.handleDatePicker = this.handleDatePicker.bind(this)
+        // this.handleDatePicker = this.handleDatePicker.bind(this)
     }
 
-    handleDatePicker = (date)=> {
-        console.log("Calling handle date picker")
+    currentDate = () => React.createRef()
+
+    handleChange = (date)=> {
+        // console.log(this)
+        console.log("The props are")
+        console.log(date)
+        this.currentDate = date
         this.setState({
             startDate: date
+            
         })
     }
 
@@ -53,12 +59,12 @@ class BandApply extends Component{
                             firstName:"",
                             lastName:"",
                             email: "",
-                            username:"",
+                            userName: "",
                             password:"",
                             bandName:"",
                             bandGenre:"",
                             numPeopleInBand:1,
-                            tentativeDateYouWillBeReady:"",
+                            tentativeDateYouWillBeReady:"4",
                             accountType:"Band",
                         }}
                         
@@ -136,7 +142,10 @@ class BandApply extends Component{
 
                                     <label className="form-input-field">
                                         Date you will be ready:
-                                        <Field name="tentativeDateYouWillBeReady" component={FormDatePicker} startDate={this.state.startDate} onChange={this.handleDatePicker}/>
+                                        <Field name="tentativeDateYouWillBeReady" component={FormDatePicker} 
+                                        startDate={this.state.startDate} 
+                                        onChange={this.handleChange}/>
+                                        
                                         <ErrorMessage name="tentativeDateYouWillBeReady"/>    
                                     </label>
 
@@ -157,19 +166,3 @@ class BandApply extends Component{
 
 
 export default BandApply;
-
-
-                                
-                                
-    {/*                             
-                                <label>
-                                    Join our newsletter
-                                    <Field type="checkbox" name="newsLetter" checked={props.values.newsLetter} />
-                                </label>
-                                <label>
-                                    fdsa
-                                    <Field component="select" name="plan">
-                                        <option value="free">Free</option>
-                                        <option value="premium">Premium</option>
-                                    </Field>
-                                </label>*/}

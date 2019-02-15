@@ -35,13 +35,20 @@ html, body{
 	margin:auto;
 }
 
-
-
 .header{
 	display:grid;
 	grid-template-columns: .25fr 1fr;
-	background-color:#000000;
+	background-color:#1d2120;
 	color:#FDD935;
+}
+
+.header-img{
+	width:auto;
+	height:100%;
+}
+
+.header-img a:link img{
+	height:100%;
 }
 
 #header-right-area{
@@ -144,6 +151,7 @@ a:active {
 }
 
 .caption-area{
+	padding:5px;
 	width:100%;
 	background-color:#000000;
 	margin-top:-5px;
@@ -436,19 +444,35 @@ a:active {
 }
 
 .user-profile-overview{
-	display:grid;
-	grid-template-columns: .5fr 1fr;
-	grid-template-areas:
-		"picture userInfo";
-	width:30%;
+	display:flex;
+	flex-direction: row;
+	width:100%;
 	color:#bcd5d1;
+
 }
 
 .user-profile-pic{
-	width:125px;
+	width:130px;
 	height:auto;
-	
 }
+
+.user-profile-overview-info{
+	display:grid;
+	width:100%;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-areas: 
+		"col1 col1 col1"
+		"space update space";
+}
+
+.user-profile-overview-info-col{
+	grid-area:"col1";
+}
+
+.user-profile-overview-info-update{
+	grid-area:"update";
+}
+
 
 
 .date-picker-input{
@@ -492,3 +516,182 @@ a:active {
 	width:50%;
 	margin:auto;
 }
+
+.control-panel{
+	padding:10px;
+}
+
+.control-panel-commands{
+	display:flex;
+	flex-direction:row;
+	width:100%;
+	background-color:black;
+	border:2px solid #F6F6F8;
+}
+
+.control-panel-commands button{
+	flex-grow:1;
+	background-color:#000000;
+	color:#FDD935;
+	border-color:#F6F6F8;
+	font-size:18px;
+	font-weight:600;
+}
+
+.info-overview{
+	display:flex;
+	flex-direction:column;
+}
+
+.data-table-container{
+	position:relative;
+	max-width: 100vw;
+	
+}
+
+.scroll-container{
+	overflow-x:auto;
+	margin-left:145px;
+	
+}
+.data-table{
+	border-spacing: 0px;
+	background:white;
+	box-shadow: 0 1px 0 0 rgba(22,29,37,0.05);
+	width:100%;
+}
+
+.cell{
+	border:1px solid rgba(22,29,37,0.05);
+	padding:4px;
+	text-align:left;
+	vertical-align:top;
+}
+
+.fixed-cell{
+	border: 1px solid rgba(22,29,37,0.05);
+	padding:4px;
+	position:absolute;
+	top:auto;
+	left:0;
+	width:136px;
+	white-space:unset;
+	text-align:left;
+	backface-visibility: hidden;
+	background:white;
+	word-wrap: break-word;
+	word-break: break-word;
+	overflow-wrap:break-word;
+}
+
+.event-info-commands{
+	display:flex;
+	flex-direction:row;
+	justify-content: center;
+	padding:4px;
+}
+
+.event-info-commands button{
+	background-color:#000000;
+	color:#FDD935;
+	border-color:#F6F6F8;
+	font-size:18px;
+	font-weight:600;
+	margin:10px;
+	
+}
+
+.info-area-add-form{
+	background-color:white;
+	display:grid;
+	grid-template-columns: .75fr 1fr 1fr 1fr;
+	grid-template-areas: 
+		"formHeader formHeader formHeader formHeader"
+		"farleftside leftside formMiddle rightside"
+		"buttonArea buttonArea buttonArea buttonArea";
+}
+
+.add-form-header{
+	grid-area:formHeader;
+	text-align: center;
+}
+
+.add-form-farleftside{
+	grid-area:farleftside;
+	justify-self: center;
+	align-self:center;
+}
+
+.add-form-leftside{
+	grid-area:leftside;
+	display:flex;
+	flex-direction:column;
+}
+.add-form-middle{
+	grid-area:formMiddle;
+	display:flex;
+	flex-direction:column;
+}
+
+.add-form-rightside{
+	grid-area:rightside;
+	display:flex;
+	flex-direction:column;
+}
+
+.add-form-buttonArea{
+	grid-area:buttonArea;
+	justify-self: center;
+	width:25%;
+}
+
+.modify-event-section{
+	display:grid;
+	grid-template-rows:1fr;
+	grid-template-areas:
+	"formHeader"
+	"selector";
+	
+}
+
+.modify-event-section-header{
+	grid-area:formHeader;
+	justify-self:center;
+}
+
+.modify-event-section-selector{
+	grid-area:selector;
+	justify-self: center;
+}
+.modify-event-form{
+	display:grid;
+	grid-template-columns: .75fr 1fr 1fr 1fr;
+	grid-template-areas:
+	"farleftside leftside formMiddle rightside"
+	"buttonArea buttonArea buttonArea buttonArea";
+}
+
+.modify-event-form-header{
+	grid-area:formHeader;
+}
+
+
+
+
+
+
+
+/*
+	New colors for the color scheme:
+		black is the local background for each local element.
+		gold is the text color for local elements. 
+		gray is the border for outside and inside local elements
+		white is well I don't remember but we will see. 
+
+		black is: #000000
+		gold is:  #FDD935
+#1d2120
+		border gray is: #646c79
+
+		white is: #F6F6F8
+*/

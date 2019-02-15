@@ -1,4 +1,4 @@
-import {BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import {BrowserRouter, Route, Switch } from 'react-router-dom';
 import BeerGarden from './BeerGarden/BeerGarden';
 import Vendors from './Vendors/Vendors';
 import Home from './HomePage/Home';
@@ -12,7 +12,7 @@ import UserProfile from './UserProfile/UserProfile';
 import React from 'react';
 import FormikBandApply from './FormComponents/BandApply';
 import Login from './Login';
-import EventCoordinator from './EventCoordinator';
+import EventCoordinator from './EventCoordinator/EventCoordinator';
 
 
 
@@ -73,11 +73,3 @@ function Router(props){
 
 export default Router;
 
-{/* <Route path ="/band-apply" render={() =>(
-                    formSubmitted.isSubmitted ? (
-                        
-                        <Redirect to ="/user-profile/:userName" /> 
-                    ) :(
-                        <FormikBandApply/>
-                    )
-                )} /> */}

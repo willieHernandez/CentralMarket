@@ -46,41 +46,33 @@ class VendorOverview extends React.Component {
 
         let index = 0;
         let counter =1;
-        let liveMusicArray = Object.values(this.props.vendorList);
-        let displayFirst = true;
-
+        let vendorsArray = Object.values(this.props.vendorList);
+        
 
         while (counter <= numContainers){
 
-            // use this to set the displayContainer prop
-            
-            if (counter === 1) {
-                displayFirst = true;
-            } else {
-                displayFirst = false;
-            } 
             if (hasUnevenRows){
                 // will be an even row 
                 if (counter < numContainers){
-                    this.containerArray.push(liveMusicArray.slice(index, index+numEventsToShow))
+                    this.containerArray.push(vendorsArray.slice(index, index+numEventsToShow))
                     index += numEventsToShow
                 } else if ((counter = numContainers) && !allowNavigate) {
-                    this.containerArray.push(liveMusicArray.slice(index,index+numEventsToShow))
+                    this.containerArray.push(vendorsArray.slice(index,index+numEventsToShow))
                     console.log("\t\t\tthe containerarray" + this.containerArray)
                     index += numEventsToShow
                 }
                 // will be an uneven row
                 else {
-                    this.containerArray.push(liveMusicArray.slice(index))
+                    this.containerArray.push(vendorsArray.slice(index))
                     // don't need to increment index because we won't come back to it. 
 
                 }
             } 
             // won't have any uneven rows
             else {
-                liveMusicArray.slice(index, index+numEventsToShow).map(() => {
+                vendorsArray.slice(index, index+numEventsToShow).map(() => {
                     // Render event
-                    console.log("Rendering element number " + liveMusicArray[index])
+                    console.log("Rendering element number " + vendorsArray[index])
                 })
             }
             counter++;

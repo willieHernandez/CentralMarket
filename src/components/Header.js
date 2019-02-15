@@ -5,9 +5,11 @@ function Header(){
 	
 	return(
 		<div className="header">
-			<Link to="/">
-				<img src="https://scontent.fbna1-1.fna.fbcdn.net/v/t1.0-9/552770_637204262972116_1495274207_n.jpg?_nc_cat=108&_nc_ht=scontent.fbna1-1.fna&oh=83170b112e03c560383dedfa39940981&oe=5CD0F3E4" alt="Central Market" />
-			</Link>
+			<div className="header-img">
+				<Link to="/">
+					<img src="https://scontent.fbna1-1.fna.fbcdn.net/v/t1.0-9/552770_637204262972116_1495274207_n.jpg?_nc_cat=108&_nc_ht=scontent.fbna1-1.fna&oh=83170b112e03c560383dedfa39940981&oe=5CD0F3E4" alt="Central Market" />
+				</Link>
+			</div>
 			<div id="header-right-area">
 				<div id="central-market-title">
 					<h1 className="title-top">  Welcome to Central Market </h1>

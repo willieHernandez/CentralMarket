@@ -1,0 +1,22 @@
+1. Event Coordinator Add Event Form: When you click submit we need to verify the number of vendors that are attending and make sure they applied, they were approved, and if not then make sure the coordinator is aware that this hasn't happened and they need to do it. 
+
+2. Style the EventCoordinatorEventForm.
+
+3. Create logic for AddEventForm submit and cancel (event handler is handleCancelAddAnEvent).
+
+4. Finish the add form logic on submit. What should it do with the event that was just created. 
+
+5. Need to refactor all the forms and use base react instead of using Formik
+
+6. Need to create a method to convert the date that the html forms provide and change them into normal dates with dd-mon
+
+
+I am going to stop working on the central market application with the intent of coming back to it. I have to start working on the java spring application before I gets too late. 
+
+I left off working on the control panel, I was able to implemnet add  an event and get the info overview component to update when I add an event. 
+
+I created the form for modify an event, however I did not have it so it sets the values for the form inputs to the value of the event that was selected. This is where I would start when I come back to this. 
+
+Also when it comes to forms it was a lot easier to just use the base react jsx syntax and methodology to create the form. Then to get the values just create refs for them. 
+
+I did not implement anything to the cloud yet, initially I was going to use AWS, but I think I am going to switch to the google cloud platform, for this app if I am crunched for time then I will use firebase from google to implement everything from authenticaiton, to storing the data on the database in firebase. 
